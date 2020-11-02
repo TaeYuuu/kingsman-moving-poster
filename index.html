@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kingsman</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="open.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+</head>
+<body>
+	 <div class="wrap">	 	 
+		 <div class="head">
+		 	<div class="titleBox"><span>THE &nbsp; &nbsp; &nbsp; SECRET &nbsp; &nbsp; &nbsp; SERVICE &emsp; &emsp; &emsp; WE &nbsp; &nbsp; &nbsp; ARE &nbsp; &nbsp; &nbsp; KINGSMAN </span></div> 	
+		 </div>
+
+		 <div class="mid">	
+		 	
+
+		 	<div class="mid2-1">
+		 		<div class="rot"><img src="rotate.png"></div>
+		 		<div  id="fly-in">
+		 		<div><p class="p" data-split="Kings &nbsp;man">Kings &nbsp;man</p></div></div>
+		 		<div class="effect-1"><img src="2.png" class="s1">
+		 		</div>	     	
+
+			   
+		 	</div>
+
+		 	<div class="mid2-2">
+		 	<div class="progress">
+ 			 	<div class="progress-container">
+ 			 		 <label>During a mission in the Middle East in 1997,</label>
+ 			 		 <label> probationary secret agent Lee Unwin sacrifices</label>
+ 			 		  <label> himself to protect his superior, Harry Hart.</label>
+ 			 		  <label> Hart, blaming himself, returns to London to</label>
+ 			 		  <label> give Lee's widow, Michelle, and her young son</label>
+ 			 		  <label> Gary "Eggsy" a medal engraved with an emergency assistance number.</label>
+ 			   	</div>
+			</div>
+
+
+
+		 	</div>
+		 	
+		 		
+		 </div> 	 			 	
+
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+    var inputs = $(".progress-container").find($("label") );
+    
+    for(var i =0 ; i< inputs.length; i ++)
+    { 
+         var index = i +1;
+         var time = ((inputs.length)-i ) * 200;
+        $(".progress-container label:nth-child("+ index+")").css( "-webkit-animation", "anim 10s "+time+"ms infinite ease-in-out" );
+        $(".progress-container label:nth-child("+index+")").css( "-animation", "anim 10s "+time+"ms infinite ease-in-out" );
+    }
+
+})
+	</script>
+	
+
+
+
+</body>
+</html>
