@@ -71,14 +71,14 @@
 			.progress {
 			  position: absolute;
 			  top: 0;
-			  left: 60px;
+			  left: 50px;
 			  height: 100%;
 			  width: 100%;
 			}
 
 			.progress-container {
 			  transform: translateY(-50%);
-			  top: 50%;
+			  top: 40%;
 			  position: absolute;
 			  width: 1000px;
 			  color: black;
